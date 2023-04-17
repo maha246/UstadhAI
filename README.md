@@ -32,3 +32,7 @@ In future versions, I plan to improve the user interface, add more features and 
 
 ### Contact
 If you have any questions or feedback about this project, please feel free to contact us at mahayounis00@gmail.com.
+
+<img src="/media/home.png" width="47%">
+<img src="/media/arabicQuiz.png" width="47%">
+
