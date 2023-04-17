@@ -1,0 +1,30 @@
+<h2>قطعة فهم مقروء باللغة العربية</h2>
+<div class="container">
+      <form class="form" (ngSubmit)="submitForm()" dir="rtl">
+          <div class="form-group">
+            <label for="gradeInput">الصف الابتدائي</label>
+            <input type="text" class="form-control" id="gradeInput" [(ngModel)]="quizInput.grade" name="grade">
+          </div>
+          <div class="form-group">
+            <label for="numberOfQuestionsInput">عدد الأسئلة</label>
+            <input type="number" class="form-control" id="numberOfQuestionsInput" [(ngModel)]="quizInput.numberOfQuestions" name="numberOfQuestions">
+          </div>
+          <div class="form-group">
+            <label for="topicInput">عدد الجمل
+            </label>
+            <input type="number" class="form-control" id="topicInput" [(ngModel)]="quizInput.numberOfSentences" name="topic">
+          </div>
+          <button type="submit" class="btn btn-primary">إرسال</button>
+      </form>
+    <div class="text" dir="rtl">
+      <div *ngFor="let chunk of chunks">{{chunk}}</div>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-primary btn1" (click)="exportToDocs()">أعجبني حمّله الان</button>
+      <button class="btn btn-primary btn2" (click)="submitForm()">لم يعجبني أريد نصا اخر</button>
+    </div>
+  
+  </div>
+  
+  
+    

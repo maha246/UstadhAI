@@ -6,30 +6,37 @@
     </div>
     <hr id="hr1">
     <div class="card-container">
-      <button class="card card-small"  tabindex="0">
+      <button class="card card-small"  tabindex="0" (click)="sideBarButtonCLicked(1)" 
+      [ngStyle]="{ 'background-color': sideBarClickedButton === 1 ? '#E50058' : 'white', 'color': sideBarClickedButton === 1 ? 'white' : 'black',
+      'border':sideBarClickedButton === 1 ? '#E50058' :  'white'
+    }">
         <span class="button-text">Home</span>
       </button>
 
-      <button class="card card-small"  tabindex="0">
+      <button class="card card-small"  tabindex="0" (click)="sideBarButtonCLicked(2)"
+      [ngStyle]="{ 'background-color': sideBarClickedButton === 2 ? '#E50058' : 'white', 'color': sideBarClickedButton === 2 ? 'white' : 'black',
+      'border':sideBarClickedButton === 2 ? '#E50058' :  'white'
+    }">
         <span class="button-text">Arabic Quiz Generator</span>
       </button>
   
-      <button class="card card-small" tabindex="0">
+      <button class="card card-small" tabindex="0" (click)="sideBarButtonCLicked(3)"
+      [ngStyle]="{ 'background-color': sideBarClickedButton === 3 ? '#E50058' : 'white', 'color': sideBarClickedButton === 3 ? 'white' : 'black',
+      'border':sideBarClickedButton === 3 ? '#E50058' :  'white'
+    }">
         <span class="button-text">English Quiz Generator</span>
       </button>
   
-      <button class="card card-small lastbutton"  tabindex="0">
+      <button class="card card-small lastbutton"  tabindex="0" (click)="sideBarButtonCLicked(4)"
+      [ngStyle]="{ 'background-color': sideBarClickedButton === 4 ? '#E50058' : 'white', 'color': sideBarClickedButton === 4 ? 'white' : 'black',
+      'border':sideBarClickedButton === 4 ? '#E50058' :  'white'
+    }">
         <span class="button-text">Feedback Generator</span>
       </button>
 
     </div>
   </nav>
-  
-  
   <div class="content" role="main">
-    Welcome To UstadhAI
+    <router-outlet></router-outlet>
   </div>
 </div>
-
-
-<router-outlet></router-outlet>
