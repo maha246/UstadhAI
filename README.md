@@ -6,7 +6,7 @@ UstadhAI is an early version of a web app aimed at helping teachers save time pe
 
 
 ## Features
-- Arabic Quiz generator: Create Arabic reading comprehension quizzes for your students with ease. 
+- Arabic Quiz generator: Create Arabic reading comprehension quizzes for your students with ease, and download it as a docx file.
 - (In development) English Quiz generator : Create English reading comprehension quizzes for Arab students.
 - (Future feature) Feedback generator: Input the student's description and generate personalized feedback for both parents and students.
 
